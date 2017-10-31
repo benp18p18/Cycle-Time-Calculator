@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- Add your site or application content here -->
+        <nav class="navbar navbar-inverse bg-primary">    
+            <a class="navbar-brand" style = "color: white;" href="#">Sonoco Display: Cycle Time Calculator</a>
+        </nav>
+        <div class="container">
+            <div class = "jumbotron" style = "margin-top: 1em;">
+                <form id = "standardRateForm">
+                    <div class="form-group">
+                        <label for="crewSize">Crew Size</label>
+                        <input type="number" class="form-control" id="crewSizeInput" placeholder="Crew Size Input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="standardRate">Standard Rate</label>
+                        <input type="number" step="any" class="form-control" id="standardRateInput" placeholder="Standard Rate Input" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style = "margin-top: 2em;">Calculate Cycle Time</button>
+                </form>
+            </div>
+            <h4 id = "standardRateOutputCycle" style = "margin: 1em 1em 0em 1em;"></h4>
+            <h4 id = "standardRateOutputHour" style = "margin: 1em 1em 0em 1em;"></h3>
+            <h4 id = "standardRateOutputShift" style = "margin: 1em 1em 1em 1em;"></h3>
+        </div>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
